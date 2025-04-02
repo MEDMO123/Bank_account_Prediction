@@ -93,4 +93,4 @@ else:
     # Prédiction à partir des entrées utilisateur
     if st.button("Prédire"):
         prediction = model.predict(input_data)
-        st.success(f"Prédiction : {'Compte bancaire' if prediction[0] == 0 else 'Pas de compte bancaire'}")
+        st.success(f"Prédiction : {'Compte bancaire' if prediction[0] == 1 else 'Pas de compte bancaire'}")
